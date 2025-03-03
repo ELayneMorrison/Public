@@ -1,1 +1,460 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jane Smith's Resume</title>
+    <style>
+        html {
+            print-color-adjust: exact;
+        }
 
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: small;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        .container {
+            padding: 20px 30px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #4a90e2;
+            margin-bottom: 10px;
+        }
+
+            .header h1 {
+                font-size: 2.5em;
+                color: #4a90e2;
+            }
+
+            .header .contact-info {
+                text-align: right;
+            }
+
+                .header .contact-info div {
+                    margin-bottom: 5px;
+                }
+
+        .section {
+            margin-bottom: 5px;
+        }
+
+            .section h2 {
+                font-size: 1.8em;
+                color: #4a90e2;
+                margin-bottom: 15px;
+                border-bottom: 2px solid #4a90e2;
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+
+            .section h3 {
+                font-size: 1.5em;
+                color: #333;
+                margin-bottom: 10px;
+                margin-top: 5px;
+            }
+
+            .section p {
+                margin-bottom: 10px;
+                line-height: 1.6;
+            }
+
+            .section ul {
+                padding-left: 20px;
+                list-style: disc;
+            }
+
+                .section ul li {
+                    margin-bottom: 10px;
+                }
+
+        .personal-info {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .summary {
+            width: 68%;
+        }
+
+        .links {
+            margin-left: 10px;
+            flex-grow: 1;
+            padding: 5px;
+            border: #4a90e2 2px dotted;
+        }
+
+            .links ul {
+                margin: 5px 0;
+            }
+
+            .links h3 {
+                margin: 0;
+            }
+
+            .links a {
+                color: #4a90e2;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+        .details {
+            display: flex;
+        }
+
+        .main-details {
+            flex: 0 0 68%;
+            width: 68%;
+        }
+
+        .side-details {
+            margin-left: 20px;
+            flex: 1;
+        }
+
+            .side-details .section div {
+                font-size: small;
+            }
+
+            .side-details .section h3 {
+                font-size: medium
+            }
+
+        .projects .project,
+        .experience .job,
+        .education .school,
+        .certifications .certification,
+        .volunteer .volunteer-work,
+        .languages .language,
+        .accolades .accolade {
+            padding: 20px;
+            background-color: #eff4fd;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 10px;
+        }
+
+            .projects .project p,
+            .experience .job p,
+            .education .school p,
+            .certifications .certification p,
+            .volunteer .volunteer-work p,
+            .languages .language p,
+            .accolades .accolade p {
+                margin: 0;
+            }
+
+        .language {
+            padding: 5px 10px !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="templateContainer" class="container">
+        <div class="header">
+            <div class="name-links">
+                <h1 id="name">Layne Morrison</h1>
+            </div>
+            <div class="contact-info">
+                <div id="email">elaynemorrison@gmail.com</div>
+                <div id="phone">202-365-3329</div>
+                <div id="address">Washington DC, USA</div>
+            </div>
+        </div>
+
+        <div class="personal-info">
+            <p class="summary">
+                Data, analytics, and digital operations executive with 20 years of experience leading high-impact analytics and fostering data-driven decision-making. 
+                Expertise in social science research methods, statistical modeling, and AI-driven analytics, including support for public policy and ligitation. 
+                Strong leader and mentor in building analytics teams and scaling data capacity in advocacy organizations. Skilled at managing cross-functional collaborations, 
+                building stakeholder engagement and trust, shaping analytics strategy, and implementing innovation.
+            </p>
+            <div class="links">
+                <h3>Links</h3>
+                <ul id="links">
+                    <li><a href="https://linkedin.com/in/elaynemorrison">LinkedIn</a></li>
+                    <li><a href="https://github.com/elaynemorrison">GitHub</a></li>
+          
+                </ul>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="main-details">
+                <div class="experience section">
+                    <h2>Work Experience</h2>
+                    <div id="workExperience">
+                        <div class="job">
+                            <h3>US Department of Education</h3>
+                            <p>
+                                <strong>Position:</strong>
+                                Deputy Chief Data Officer, Analytics and Business Intelligence
+                            </p>
+                            <p>
+                                <strong>Dates:</strong>
+                                Oct 2020 - Present
+                            </p>
+                            <ul>
+                                <li>
+                                    Catalyze ED’s data culture through launching ED’s Data Science Training Program, upskilling 100+ mid-career professionals and overseeing 7 Capstone projects annually. Chair ED’s Data Professional Community of Practice (500+ members), and fostering secure agency-wide adoption of generative AI training, training 100+ employees and launching an AI rotation program.
+                               </li>
+                                <li>
+                                    Craft compelling visualizations and storytelling, such as working on ED’s “Raise the Bar” initiative directly with agency leadership.
+                                </li>
+                                <li>
+                                    Lead dynamic team of data scientists and engineers, expanding impact through detailees and interns. Direct analytics contracts, budget planning, and congressional justifications, ensuring strategic investment in data and AI.
+                                </li>
+                                <li>
+                                    Deliver high impact innovation to advance the strategic use of data, analytics and AI for ED offices. Led analytics efforts supporting major ED offices, delivering 10+ high-impact products annually using Python, R, SAS, Tableau, Power BI, GitHub, ChatGPT assistants, Power Platform and Azure.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="job">
+                            <h3>IBM Global Business Services US Federal Advanced Analytics</h3>
+                            <p>
+                                <strong>Position:</strong>
+                                Service Area Manager
+                                <strong>Dates:</strong>
+                                July 2010 - Sept 2020
+                            </p>
+                            <p>
+                                <strong>Position:</strong>
+                                Managing Consultant
+                                <strong>Dates:</strong>
+                                June 2007 - Nov 2009
+                            </p>
+                            <p>
+                                <strong>Position:</strong>
+                                Senior Consultant
+                                <strong>Dates:</strong>
+                                July 2005 -  May 2007
+                            </p>
+                            <ul>
+                                <li>
+                                    Successfully delivered dozens of projects for federal and health care clients, as technical expert and project manager. Applied data and statistical analysis principles, procedures, and tools in predictive modeling, AI, econometrics and simulation. Led transformative projects in predictive analytics, strategy, microsimulation, simulation, process re-engineering, and text analytics, using SAS, SPSS, R, Python, visualization and GIS software. Authored complex and high profile reports and presented results to agency executives, as well as presenting at conferences and training others.
+                                </li>
+                                <li>Program/project manager of record responsible for successful management of data/analytics/AI projects ranging from $1M-$4M/annually at agencies including ED, USAID, HHS, IRS, USCIS, VA.</li>
+                                <li>
+                                    Supervised twelve data science consultants annually since 2010 and contributed to IBM’s solutions, methods, and communities.
+                                </li>
+                                <li>
+                                    Authored thought leadership on federal Chief Data Officer opportunities, published by the IBM Center for the Business of Government 2020, and several project-related papers with clients.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="job">
+                            <h3>UC Berkeley</h3>
+                            <p>
+                                <strong>Position:</strong>
+                                Manager of Department Development
+                                <strong>Dates:</strong>
+                                02/2001 to 08/2003
+                            </p>
+                            <p>
+                                <strong>Position:</strong>
+                                Grants Manager
+                                <strong>Dates:</strong>
+                                12/1999 to 02/2001
+                            </p>
+                            <ul>
+                                <li>
+                                    Spearheaded development efforts, responsible for over $700,000 in discretionary revenue annually.
+                                </li>
+                                <li>
+                                    Cultivated advantageous industrial relationships, analyzing research trends within the contexts of federal R&D agendas.                            
+                                </li>
+                                <li>
+                                    Promoted public-private partnerships with attention to venture capital firms. Launched emerging interdisciplinary centers. Managed basic research in robotics and aerial vehicles.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects section">
+                    <h2>Projects</h2>
+                    <div id="projects">
+                        <div class="project">
+                            <h3>E-commerce Platform</h3>
+                            <p>
+                                Developed a scalable e-commerce platform for small businesses.
+                            </p>
+                            <ul>
+                                <li>Led the front-end development using React and Redux.</li>
+                                <li>Implemented the back-end API with Node.js and Express.</li>
+                                <li>Designed and managed the database schema using MongoDB.</li>
+                                <li>
+                                    Deployed the application on AWS using Docker and Kubernetes.
+                                </li>
+                            </ul>
+                            <p><a href="https://ecommerceplatform.com">Website</a></p>
+                            <p>
+                                <a href="https://github.com/janesmith/ecommerce-platform">
+                                    Source Code
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="project">
+                            <h3>Project Management Tool</h3>
+                            <p>
+                                Created a project management tool to improve team collaboration.
+                            </p>
+                            <ul>
+                                <li>
+                                    Designed the user interface with Angular and Material
+                                    Design.
+                                </li>
+                                <li>
+                                    Developed the server-side logic with Spring Boot and Java.
+                                </li>
+                                <li>
+                                    Integrated real-time collaboration features using
+                                    WebSockets.
+                                </li>
+                                <li>
+                                    Implemented user authentication and authorization with
+                                    OAuth2.
+                                </li>
+                            </ul>
+                            <p><a href="https://projectmanagementtool.com">Website</a></p>
+                            <p>
+                                <a href="https://github.com/janesmith/project-management-tool">
+                                    Source Code
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education section">
+                    <h2>Education</h2>
+                    <div id="education">
+                        <div class="school">
+                            <h3>Masters of Science in Public Policy and Management</h3>
+                            <p>
+                                Carnegie Mellon University Pittsburgh PA May 2005
+                            </p>
+                            <p>
+                                Management Science, Operations Research GPA: 4.02 of a maximum 4.00
+                            </p>
+                        </div>
+
+                        <div class="school">
+                            <h3>Bachelor of Arts </h3>
+                            <p>
+                                Mills College, Oakland, CA May 1997 GPA: 3.7 of a maximum 4.00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-details">
+                <div class="certifications section">
+                    <h2>Certifications</h2>
+                    <div id="certifications">
+                        <div class="certification">
+                            <h3>
+                                Certified Data Management Professional (CDMP) by <a href="https://www.dama.org/cpages/home">DAMA International</a>
+                            </h3>
+                            <p>Date Acquired: 2019 </p>
+                        </div>
+                        <div class="certification">
+                            <h3>
+                                Certified Analytics Professional (CAP) by <a href="https://www.informs.org/">INFORMS</a>
+                            </h3>
+                            <p>Date Acquired: 2013</p>
+                        </div>
+
+                        <div class="certification">
+                            <h3>Certified Project Management Professional (PMP) by <a href="https://www.pmi.org/"> PMI </a> </h3>
+                            <p>Date Acquired: 2008 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accolades section">
+                    <h2>Accolades</h2>
+                    <div id="accolades">
+                        <div class="accolade">
+                            <h3>Conference Speaker</h3>
+                            <p>
+                                Speaker at <a href="https://meetings.informs.org/wordpress/analytics2022/speakers/layne-morrison/"> INFORMS Business Analytics 2022 Conference</a>
+                            </p>
+                            <p></p>
+                        </div>
+
+                        <div class="accolade">
+                            <h3>Published Papers</h3>
+                            <p></p>
+                            <p>
+                                Research and Listed at  <a href="https://www.researchgate.net/profile/Erica-Morrison">Research Gate</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <p>This paragraph will be commented out and not displayed.
+                <div class="volunteer section">
+                    <h2>Volunteer Work</h2>
+                    <div id="volunteerWork">
+                        <div class="volunteer-work">
+                            <h3>Code for Good</h3>
+                            <p>
+                                <strong>Dates:</strong>
+                                2019-01-01 - 2020-12-31
+                            </p>
+                            <p>Taught coding workshops to underprivileged youth.</p>
+                        </div>
+
+                        <div class="volunteer-work">
+                            <h3>Open Source Contributor</h3>
+                            <p>
+                                <strong>Dates:</strong>
+                                2016-01-01 - Present
+                            </p>
+                            <p>
+                                Contributed to various open-source projects, focusing on bug
+                                fixes and feature enhancements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+    <div class="languages section">
+        <h2>Languages</h2>
+        <div id="languages">
+            <div class="language">
+                <p>
+                    <strong>English:</strong>
+                    Native
+                </p>
+            </div>
+
+            <div class="language">
+                <p>
+                    <strong>Spanish:</strong>
+                    Fluent
+                </p>
+        </p> -->
+            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
